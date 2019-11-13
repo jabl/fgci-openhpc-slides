@@ -37,7 +37,8 @@ tools, and a variety of scientific libraries.
 
 # OpenHPC and FGCI
 
-- In production use at Aalto
+- OHPC Slurm in use at many sites
+- Node provisioning in production use at Aalto
 - Required (surprisingly) few changes to FGCI ansible code
 - Three new roles
 - Three new playbooks
