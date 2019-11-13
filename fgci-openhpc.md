@@ -16,13 +16,14 @@ tools, and a variety of scientific libraries.
 
 ---
 
-## So, what is it?
+## So, what is it, actually?
 
-### Cluster-in-a-box
+### A: Cluster-in-a-box
 
 - Provisioning: dhcp, tftp etc. to install nodes.
+  - Warewulf or xCat.
 - Bunch of useful HPC software: slurm, munge, various libraries.
-- Builds on top of normal Linux distro (CentOS)
+- Builds on top of normal Linux distro (CentOS or SLES)
 
 ---
 
@@ -39,9 +40,9 @@ tools, and a variety of scientific libraries.
 
 - OHPC Slurm in use at many sites
 - Node provisioning in production use at Aalto
-- Required (surprisingly) few changes to FGCI ansible code
-- Three new roles
-- Three new playbooks
+  - Required (surprisingly) few changes to FGCI ansible code
+  - Three new roles
+  - Three new playbooks
 
 ---
 
@@ -54,7 +55,7 @@ tools, and a variety of scientific libraries.
   - Setup warewulf and initialise node images
 - ansible-role-ohpc-provision
   - Finalize node images and provision them
-    - Create nodes with (name, mac etc.)
+    - Create nodes (name, MAC etc.)
     - Specify boot kernel and image for nodes
     - Update dhcp/tftp
 
